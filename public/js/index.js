@@ -2,13 +2,11 @@
 
   socket.on('connect', function () {
     console.log('Connected to server');
-
-    socket.emit('createMessage', {
-      from: 'David',
-      text: 'Mincha is at 2:00pm around here'
-    })
+    // socket.emit('createMessage', {
+    //   from: 'David',
+    //   text: 'Mincha is at 2:00pm around here'
+    // })
   });
-
   socket.on('disconnect', function () {
     console.log('Disconnected from server');
   });
